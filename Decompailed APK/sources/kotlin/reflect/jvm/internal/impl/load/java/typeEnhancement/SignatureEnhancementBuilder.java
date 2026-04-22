@@ -1,0 +1,136 @@
+package kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import kotlin.Pair;
+import kotlin.TuplesKt;
+import kotlin.collections.ArraysKt;
+import kotlin.collections.CollectionsKt;
+import kotlin.collections.IndexedValue;
+import kotlin.collections.MapsKt;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.ranges.RangesKt;
+import kotlin.reflect.jvm.internal.impl.load.kotlin.SignatureBuildingComponents;
+import kotlin.reflect.jvm.internal.impl.resolve.jvm.JvmPrimitiveType;
+
+/* JADX INFO: compiled from: predefinedEnhancementInfo.kt */
+/* JADX INFO: loaded from: classes2.dex */
+final class SignatureEnhancementBuilder {
+    private final Map signatures = new LinkedHashMap();
+
+    /* JADX INFO: compiled from: predefinedEnhancementInfo.kt */
+    public final class ClassEnhancementBuilder {
+        private final String className;
+        final /* synthetic */ SignatureEnhancementBuilder this$0;
+
+        public ClassEnhancementBuilder(SignatureEnhancementBuilder signatureEnhancementBuilder, String className) {
+            Intrinsics.checkNotNullParameter(className, "className");
+            this.this$0 = signatureEnhancementBuilder;
+            this.className = className;
+        }
+
+        public final String getClassName() {
+            return this.className;
+        }
+
+        public static /* synthetic */ void function$default(ClassEnhancementBuilder classEnhancementBuilder, String str, String str2, Function1 function1, int i, Object obj) {
+            if ((i & 2) != 0) {
+                str2 = null;
+            }
+            classEnhancementBuilder.function(str, str2, function1);
+        }
+
+        public final void function(String name, String str, Function1 block) {
+            Intrinsics.checkNotNullParameter(name, "name");
+            Intrinsics.checkNotNullParameter(block, "block");
+            Map map = this.this$0.signatures;
+            FunctionEnhancementBuilder functionEnhancementBuilder = new FunctionEnhancementBuilder(this, name, str);
+            block.invoke(functionEnhancementBuilder);
+            Pair pairBuild = functionEnhancementBuilder.build();
+            map.put(pairBuild.getFirst(), pairBuild.getSecond());
+        }
+
+        /* JADX INFO: compiled from: predefinedEnhancementInfo.kt */
+        public final class FunctionEnhancementBuilder {
+            private final String errorsSinceLanguageVersion;
+            private final String functionName;
+            private final List parameters;
+            private Pair returnType;
+            final /* synthetic */ ClassEnhancementBuilder this$0;
+
+            public FunctionEnhancementBuilder(ClassEnhancementBuilder classEnhancementBuilder, String functionName, String str) {
+                Intrinsics.checkNotNullParameter(functionName, "functionName");
+                this.this$0 = classEnhancementBuilder;
+                this.functionName = functionName;
+                this.errorsSinceLanguageVersion = str;
+                this.parameters = new ArrayList();
+                this.returnType = TuplesKt.to("V", null);
+            }
+
+            public final void parameter(String type, JavaTypeQualifiers... qualifiers) {
+                TypeEnhancementInfo typeEnhancementInfo;
+                Intrinsics.checkNotNullParameter(type, "type");
+                Intrinsics.checkNotNullParameter(qualifiers, "qualifiers");
+                List list = this.parameters;
+                if (qualifiers.length == 0) {
+                    typeEnhancementInfo = null;
+                } else {
+                    Iterable<IndexedValue> iterableWithIndex = ArraysKt.withIndex(qualifiers);
+                    LinkedHashMap linkedHashMap = new LinkedHashMap(RangesKt.coerceAtLeast(MapsKt.mapCapacity(CollectionsKt.collectionSizeOrDefault(iterableWithIndex, 10)), 16));
+                    for (IndexedValue indexedValue : iterableWithIndex) {
+                        linkedHashMap.put(Integer.valueOf(indexedValue.getIndex()), (JavaTypeQualifiers) indexedValue.getValue());
+                    }
+                    typeEnhancementInfo = new TypeEnhancementInfo(linkedHashMap);
+                }
+                list.add(TuplesKt.to(type, typeEnhancementInfo));
+            }
+
+            public final void returns(String type, JavaTypeQualifiers... qualifiers) {
+                Intrinsics.checkNotNullParameter(type, "type");
+                Intrinsics.checkNotNullParameter(qualifiers, "qualifiers");
+                Iterable<IndexedValue> iterableWithIndex = ArraysKt.withIndex(qualifiers);
+                LinkedHashMap linkedHashMap = new LinkedHashMap(RangesKt.coerceAtLeast(MapsKt.mapCapacity(CollectionsKt.collectionSizeOrDefault(iterableWithIndex, 10)), 16));
+                for (IndexedValue indexedValue : iterableWithIndex) {
+                    linkedHashMap.put(Integer.valueOf(indexedValue.getIndex()), (JavaTypeQualifiers) indexedValue.getValue());
+                }
+                this.returnType = TuplesKt.to(type, new TypeEnhancementInfo(linkedHashMap));
+            }
+
+            public final void returns(JvmPrimitiveType type) {
+                Intrinsics.checkNotNullParameter(type, "type");
+                String desc = type.getDesc();
+                Intrinsics.checkNotNullExpressionValue(desc, "getDesc(...)");
+                this.returnType = TuplesKt.to(desc, null);
+            }
+
+            public final Pair build() {
+                SignatureBuildingComponents signatureBuildingComponents = SignatureBuildingComponents.INSTANCE;
+                String className = this.this$0.getClassName();
+                String str = this.functionName;
+                List list = this.parameters;
+                ArrayList arrayList = new ArrayList(CollectionsKt.collectionSizeOrDefault(list, 10));
+                Iterator it = list.iterator();
+                while (it.hasNext()) {
+                    arrayList.add((String) ((Pair) it.next()).getFirst());
+                }
+                String strSignature = signatureBuildingComponents.signature(className, signatureBuildingComponents.jvmDescriptor(str, arrayList, (String) this.returnType.getFirst()));
+                TypeEnhancementInfo typeEnhancementInfo = (TypeEnhancementInfo) this.returnType.getSecond();
+                List list2 = this.parameters;
+                ArrayList arrayList2 = new ArrayList(CollectionsKt.collectionSizeOrDefault(list2, 10));
+                Iterator it2 = list2.iterator();
+                while (it2.hasNext()) {
+                    arrayList2.add((TypeEnhancementInfo) ((Pair) it2.next()).getSecond());
+                }
+                return TuplesKt.to(strSignature, new PredefinedFunctionEnhancementInfo(typeEnhancementInfo, arrayList2, this.errorsSinceLanguageVersion));
+            }
+        }
+    }
+
+    public final Map build() {
+        return this.signatures;
+    }
+}

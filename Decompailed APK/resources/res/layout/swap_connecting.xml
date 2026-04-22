@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.fdroid.fdroid.nearby.SwapView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:swap="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    swap:toolbarColor="@color/swap_bright_blue"
+    swap:toolbarTitle="@string/swap_connecting">
+    <TextView
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/progress_text"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"/>
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_below="@+id/progress_text"
+        android:layout_centerInParent="true"
+        swap:hideAnimationBehavior="outward"
+        swap:showAnimationBehavior="inward"
+        swap:trackCornerRadius="@dimen/mtrl_progress_indicator_full_rounded_corner_radius"/>
+    <Button
+        android:textColor="@android:color/white"
+        android:id="@+id/try_again"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/try_again"
+        android:layout_below="@+id/progress_text"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/swap_light_blue"/>
+</org.fdroid.fdroid.nearby.SwapView>

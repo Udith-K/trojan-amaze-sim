@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="button_view_all_apps_in_category">
+        <item quantity="one">%d dekhè</item>
+        <item quantity="other">Sabhi %d dekhè</item>
+    </plurals>
+    <plurals name="details_last_update_days">
+        <item quantity="one">%1$d din pëhle update kiya gaya</item>
+        <item quantity="other">%1$d din pëhle update kiya gaya</item>
+    </plurals>
+    <plurals name="details_last_update_months">
+        <item quantity="one">%1$d mahíne pëhle update kiya gaya</item>
+        <item quantity="other">%1$d mahíne pëhle update kiya gaya</item>
+    </plurals>
+    <plurals name="details_last_update_weeks">
+        <item quantity="one">%1$d hafte pëhle update kiya gaya</item>
+        <item quantity="other">%1$d hafte pëhle update kiya gaya</item>
+    </plurals>
+    <plurals name="details_last_update_years">
+        <item quantity="one">%1$d sál pëhle update kiya gaya</item>
+        <item quantity="other">%1$d sál pëhle update kiya gaya</item>
+    </plurals>
+    <plurals name="ipfsgw_summary">
+        <item quantity="one">IPFS web endpoints ki madad se apps download karè: %1$d enable kiya hua</item>
+        <item quantity="other">IPFS web endpoints ki madad se apps download karè: %1$d enable kiya hua</item>
+    </plurals>
+    <plurals name="notification_summary_installed">
+        <item quantity="one">%1$d App Install Kiya Hua</item>
+        <item quantity="other">%1$d App Install Kiye Hue</item>
+    </plurals>
+    <plurals name="notification_summary_more">
+        <item quantity="one">+%1$d aur…</item>
+        <item quantity="other">+%1$d aur…</item>
+    </plurals>
+    <plurals name="notification_summary_updates">
+        <item quantity="one">%1$d Update</item>
+        <item quantity="other">%1$d Updates</item>
+    </plurals>
+    <plurals name="tts_view_all_in_category">
+        <item quantity="one">%2$s śreńi ke %1$d app dekhè</item>
+        <item quantity="other">%2$s śreńi ke sabhi %1$d apps dekhè</item>
+    </plurals>
+    <plurals name="updates__download_updates_for_apps">
+        <item quantity="one">%1$d app ke liye update download karè:</item>
+        <item quantity="other">%1$d app ke liye updates download karè:</item>
+    </plurals>
+</resources>

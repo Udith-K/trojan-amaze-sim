@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="button_view_all_apps_in_category">
+        <item quantity="zero">عرض %d</item>
+        <item quantity="one">عرض الكل %d</item>
+        <item quantity="two">عرض الكل %d</item>
+        <item quantity="few">عرض الكل %d</item>
+        <item quantity="many">عرض الكل %d</item>
+        <item quantity="other">عرض الكل %d</item>
+    </plurals>
+    <plurals name="details_last_update_days">
+        <item quantity="zero">حُدِّث منذ %1$d يوم</item>
+        <item quantity="one">حُدِّث منذ يوم</item>
+        <item quantity="two">حُدِّث منذ يومين</item>
+        <item quantity="few">حُدِّث منذ %1$d أيام</item>
+        <item quantity="many">حُدِّث منذ %1$d يوم</item>
+        <item quantity="other">حُدِّث منذ %1$d يوم</item>
+    </plurals>
+    <plurals name="details_last_update_months">
+        <item quantity="zero">حُدِّث منذ %1$d يوم</item>
+        <item quantity="one">حُدِّث منذ شهر</item>
+        <item quantity="two">حُدِّث منذ شهرين</item>
+        <item quantity="few">حُدِّث منذ %1$d أشهر</item>
+        <item quantity="many">حُدِّث منذ %1$d شهرا</item>
+        <item quantity="other">حُدِّث منذ %1$d شهر</item>
+    </plurals>
+    <plurals name="details_last_update_weeks">
+        <item quantity="zero">حُدِّث منذ %1$d يوم</item>
+        <item quantity="one">حُدِّث منذ أسبوع</item>
+        <item quantity="two">حُدِّث منذ أسبوعين</item>
+        <item quantity="few">حُدِّث منذ %1$d أسابيع</item>
+        <item quantity="many">حُدِّث منذ %1$d أسبوع</item>
+        <item quantity="other">حُدِّث منذ %1$d أسبوع</item>
+    </plurals>
+    <plurals name="details_last_update_years">
+        <item quantity="zero">حُدِّث منذ %1$d يوم</item>
+        <item quantity="one">حُدِّث منذ سنة</item>
+        <item quantity="two">حُدِّث منذ سنتين</item>
+        <item quantity="few">حُدِّث منذ %1$d سنوات</item>
+        <item quantity="many">حُدِّث منذ %1$d سنة</item>
+        <item quantity="other">حُدِّث منذ %1$d سنة</item>
+    </plurals>
+    <plurals name="ipfsgw_summary">
+        <item quantity="zero">تنزيل التطبيقات باستخدام نقاط نهاية الويب IPFS : تمكين %1$d</item>
+        <item quantity="one">تنزيل التطبيقات باستخدام نقاط نهاية الويب IPFS : تم تمكين %1$d</item>
+        <item quantity="two">تنزيل التطبيقات باستخدام نقاط نهاية الويب IPFS : تم تمكين %1$d</item>
+        <item quantity="few">تنزيل التطبيقات باستخدام نقاط نهاية الويب IPFS : تم تمكين %1$d</item>
+        <item quantity="many">تنزيل التطبيقات باستخدام نقاط نهاية الويب IPFS : تم تمكين %1$d</item>
+        <item quantity="other">تنزيل التطبيقات باستخدام نقاط نهاية الويب IPFS : تم تمكين %1$d</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="zero">%d إشعار جديد</item>
+        <item quantity="one">إشعار جديد واحد (%d)</item>
+        <item quantity="two">إشعاران جديدان (%d)</item>
+        <item quantity="few">%d إشعارات جديدة</item>
+        <item quantity="many">%d إشعارًا جديدًا</item>
+        <item quantity="other">%d إشعار جديد</item>
+    </plurals>
+    <plurals name="notification_summary_installed">
+        <item quantity="zero">لا شيء</item>
+        <item quantity="one">تطبيق واحد منصب</item>
+        <item quantity="two">تطبيقان منصبان</item>
+        <item quantity="few">%1$d تطبيقات منصبة</item>
+        <item quantity="many">%1$d تطبيقات منصبة</item>
+        <item quantity="other">%1$d تطبيقات منصبة</item>
+    </plurals>
+    <plurals name="notification_summary_more">
+        <item quantity="zero">لاشيء…</item>
+        <item quantity="one">+%1$d آخر…</item>
+        <item quantity="two">آخرين…</item>
+        <item quantity="few">+%1$d أخرى…</item>
+        <item quantity="many">+%1$d آخرين…</item>
+        <item quantity="other">+%1$d آخرون…</item>
+    </plurals>
+    <plurals name="notification_summary_updates">
+        <item quantity="zero">لا تحديثات</item>
+        <item quantity="one">تحديث واحد</item>
+        <item quantity="two">تحديثان</item>
+        <item quantity="few">%1$d تحديثات</item>
+        <item quantity="many">%1$d تحديث</item>
+        <item quantity="other">%1$d تحديث</item>
+    </plurals>
+    <plurals name="repo_num_apps_text">
+        <item quantity="zero">لا تطبيق</item>
+        <item quantity="one">تطبيق</item>
+        <item quantity="two">تطبيقان</item>
+        <item quantity="few">%d تطبيقات</item>
+        <item quantity="many">%d تطبيق</item>
+        <item quantity="other">%d تطبيق</item>
+    </plurals>
+    <plurals name="tts_view_all_in_category">
+        <item quantity="zero">لا تطبيقات</item>
+        <item quantity="one">إظهار التطبيق %1$d الوحيد في الفئة %2$s</item>
+        <item quantity="two">إظهار التطبيقان %1$d في الفئة %2$s</item>
+        <item quantity="few">إظهار عدة تطبيقات %1$d في هذه الفئة %2$s</item>
+        <item quantity="many">إظهار التطبيقات %1$d في الفئة %2$s</item>
+        <item quantity="other">إظهار الموجود %1$d في الفئة %2$s</item>
+    </plurals>
+    <plurals name="updates__download_updates_for_apps">
+        <item quantity="zero">لا تنزل تحديثات لأي شيء:</item>
+        <item quantity="one">نزّل تحديثات لتطبيق واحد:</item>
+        <item quantity="two">نزّل تحديثات لتطبيقين:</item>
+        <item quantity="few">نزّل تحديثات %1$d تطبيقات:</item>
+        <item quantity="many">نزّل تحديثات ل %1$d تطبيقا:</item>
+        <item quantity="other">نزّل تحديثات ل %1$d تطبيق:</item>
+    </plurals>
+</resources>
