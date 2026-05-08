@@ -60,7 +60,9 @@ This project strictly follows **university cybersecurity ethics policies**.
 ## 📁 Repository Structure (Educational Reference)
 ├── README.md
 ├── docs/                (guides & explanations)
-├── src/                 (sanitized code snippets only)
+├── src/
+│   └── code-snippets/
+│       └── DemoService.kt
 ├── evidence/            (screenshots & logs)
 ├── reports/             (final academic report PDF)
 └── tools/               (helper scripts if required)
