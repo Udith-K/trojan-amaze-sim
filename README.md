@@ -1,183 +1,130 @@
-# Trojan-Amaze-Sim: Educational Android Malware Injection Assignment
+# Trojan-Amaze-Sim
+### Educational Android Security Simulation
 
-> **EDUCATIONAL PROJECT ONLY** - For IE3112 Mobile Security Course  
-> This project demonstrates reverse engineering and controlled malware injection concepts for academic learning purposes.
-
----
-
-## 📋 Project Overview
-
-This repository contains a complete solution to the **IE3112 Mobile Security Assignment** - Reverse Engineering and Controlled Malware Injection in Android Applications.
-
-**Objective:** Reverse engineer the Amaze File Manager APK, inject a simulated malicious background service, and demonstrate controlled Trojan-like behavior in an educational environment.
-
-**Key Learning Outcomes:**
-- ✅ Android APK reverse engineering and decompilation
-- ✅ Android component architecture (Activities, Services, Receivers)
-- ✅ Malware injection techniques and code modification
-- ✅ Security analysis and defense mechanisms
-- ✅ Ethical hacking principles and controlled environment testing
+> **ACADEMIC PROJECT ONLY**  
+> IE3112 – Mobile Security  
+> Sri Lanka Institute of Information Technology (SLIIT)
 
 ---
 
-## ⚠️ Important: Ethical & Legal Compliance
+## 📘 Project Overview
 
-**This project is for EDUCATIONAL purposes ONLY.**
+This repository contains an **educational, controlled simulation** of Android
+application reverse engineering and **Trojan-style background service injection**
+using the open-source **Amaze File Manager** application.
 
-### Compliance Declaration:
-- ✅ All work conducted in controlled laboratory environment
-- ✅ No real user data accessed or stolen
-- ✅ No actual damage caused to any system
-- ✅ Modified APK not distributed publicly
-- ✅ Only tested on owned devices/emulators
-- ✅ Adheres to university cybersecurity ethics policy
-
-### Legal Warning:
-Using these techniques for **unauthorized access** to real systems is **ILLEGAL** and can result in:
-- Criminal charges (fraud, unauthorized access)
-- Civil lawsuits and damages
-- Imprisonment (up to 10 years)
-- Permanent criminal record
+The purpose of this project is to **demonstrate security risks, attack vectors,
+and defensive considerations** in Android application development — strictly
+within an academic and ethical context.
 
 ---
 
-## 🚀 Quick Start (5 Steps)
+## 🎯 Learning Objectives
 
-1. **Read:** `00_START_HERE.md` (entry point)
-2. **Setup:** Follow `SETUP.md` (install tools)
-3. **Understand:** Read `ASSIGNMENT_GUIDE.md` (comprehensive guide)
-4. **Execute:** Follow `EXECUTION_PLAN.md` (day-by-day plan)
-5. **Reference:** Use `QUICK_REFERENCE.md` (quick lookup)
+Through this project, students gain practical understanding of:
 
----
-
-## 📁 Repository Structure
-
-```
-├── 00_START_HERE.md              ← START HERE (entry point)
-├── README.md                      (this file)
-├── SETUP.md                      (tool setup)
-├── GETTING_STARTED.md            (5-min quick start)
-├── GITHUB_PUSH_GUIDE.md          (push instructions)
-├── LICENSE                       (MIT + educational use)
-│
-├── docs/
-│   ├── ASSIGNMENT_GUIDE.md       (15,000+ words - MAIN GUIDE)
-│   ├── EXECUTION_PLAN.md         (8,000+ words - week-by-week)
-│   ├── QUICK_REFERENCE.md        (one-page summary)
-│   └── SUMMARY.md                (visual overview)
-│
-├── src/
-│   ├── java/
-│   │   ├── TrojanService.java    (300+ lines, fully commented)
-│   │   └── TriggerReceiver.java  (200+ lines, fully commented)
-│   └── manifests/
-│       └── manifest_modifications.md
-│
-├── evidence/
-│   ├── screenshots/              (place your screenshots)
-│   ├── videos/                   (place your video)
-│   └── logs/                     (place logcat output)
-│
-├── reports/                      (place your PDF reports)
-├── guides/                       (phase-specific guides)
-└── tools/                        (automation scripts)
-```
+- Android APK reverse engineering (static analysis)
+- Android application architecture (Activities, Services, Receivers)
+- How malicious logic *can be injected* after tampering
+- Trigger-based background execution (simulated)
+- Security implications and mitigation strategies
+- Ethical boundaries of offensive security research
 
 ---
 
-## 📊 Project Phases
+## ⚠️ Ethical & Academic Compliance
 
-### Phase 1: Reverse Engineering (25%)
-- Extract and decompile APK
-- Analyze AndroidManifest.xml
-- Map application components
-- Document findings
+This project strictly follows **university cybersecurity ethics policies**.
 
-### Phase 2: Malware Injection (25%)
-- Design trigger mechanism
-- Write malicious service code
-- Modify manifest
-- Compile and sign APK
+✅ Tested only in Android Emulator  
+✅ No real user data accessed  
+✅ No network exfiltration or C2 communication  
+✅ No modified APKs distributed publicly  
+✅ No real malware deployment  
 
-### Phase 3: Security Analysis (10%)
-- Explain attack flow
-- Discuss defense mechanisms
-- Provide detection methods
-- Real-world examples
-
-### Testing & Documentation (25%)
-- Install and test
-- Capture screenshots
-- Record demonstration video
-- Write complete reports
-
-### Viva Examination (15%)
-- Technical understanding
-- Code explanation
-- Live demonstration
-- Response quality
+❌ **This project must NOT be used outside an educational environment**
 
 ---
 
-## ✅ Complete Documentation
+## 🧪 Project Scope
 
-**30,000+ words** covering:
-- APK structure and reverse engineering
-- Android components explained
-- Malware injection techniques
-- Security implications
-- Defense mechanisms (7 types)
-- Week-by-week execution plan
-- Viva exam preparation
-- Step-by-step instructions with exact commands
+- Reverse engineering using JADX
+- Analysis of `AndroidManifest.xml`
+- Controlled injection of a **simulated background service**
+- Menu-based and time-based trigger demonstration
+- Logcat-based execution verification
+- Security risk assessment and defenses
 
 ---
 
-## 💻 Source Code Included
-
-**650+ lines** of fully-commented code:
-- **TrojanService.java** (300+ lines) - Malicious service implementation
-- **TriggerReceiver.java** (200+ lines) - Broadcast receiver activation
-- Both files include educational comments for viva exam
-
----
-
-## 🎯 Getting 100/100
-
-Follow this path:
-1. ✅ Read ASSIGNMENT_GUIDE.md completely
-2. ✅ Follow EXECUTION_PLAN.md day-by-day
-3. ✅ Reference source code while coding
-4. ✅ Document everything thoroughly
-5. ✅ Practice viva answers from QUICK_REFERENCE.md
-6. ✅ Take quality screenshots and video
-7. ✅ Write detailed reports
+## 📁 Repository Structure (Educational Reference)
+├── README.md
+├── docs/                (guides & explanations)
+├── src/                 (sanitized code snippets only)
+├── evidence/            (screenshots & logs)
+├── reports/             (final academic report PDF)
+└── tools/               (helper scripts if required)
+> ⚠️ Only **sanitized, non-deployable code snippets** are included.
 
 ---
 
-## 📞 For Help
+## 🧩 Project Phases
 
-- **Setup issues:** See `SETUP.md`
-- **Quick info:** See `QUICK_REFERENCE.md`
-- **Detailed guide:** See `ASSIGNMENT_GUIDE.md`
-- **Daily tasks:** See `EXECUTION_PLAN.md`
-- **GitHub push:** See `GITHUB_PUSH_GUIDE.md`
+### Phase 1 – Reverse Engineering
+- APK decompilation
+- Component mapping
+- Permission analysis
+
+### Phase 2 – Simulation of Trojan Injection
+- Background service design (simulated)
+- Trigger logic implementation
+- Manifest modification (demonstration)
+
+### Phase 3 – Security Analysis
+- Risk identification
+- Attack flow explanation
+- Mitigation strategies
+
+### Phase 4 – Testing & Documentation
+- Emulator testing
+- Logcat verification
+- Screenshots & reporting
 
 ---
 
-## ⚖️ License
+## 👥 Group Members
 
-MIT License with educational use restriction. See `LICENSE` file.
+This is a **4-member group assignment** completed by:
+
+1. **D.M.M.P.S. Mahamohottala**  
+2. **Udith T.G.K**  
+3. **Jayasinghe J.M.S.S**  
+4. **Peiris W.S.S.N**  
+
+BSc (Hons) in Information Technology – Cyber Security  
+Sri Lanka Institute of Information Technology (SLIIT)
 
 ---
 
-## 🎓 Academic Integrity
+## 🤝 Contribution Statement
 
-This project is submitted in accordance with the university's academic integrity policy. All work is original and conducted ethically.
+All group members contributed collaboratively to:
+- Research and analysis
+- Reverse engineering study
+- Simulation design
+- Testing and validation
+- Documentation and reporting
 
 ---
 
-**Good luck! You've got everything you need.** 🚀
+## ⚖️ Disclaimer
 
-*Last Updated: April 2024*
+This repository exists **solely for academic learning**.
+
+Any techniques discussed or demonstrated are intended to help
+developers and security professionals **understand, detect, and prevent**
+Android application tampering.
+
+---
+
+*Last updated: April 2026*
