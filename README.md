@@ -1,7 +1,7 @@
 # Trojan-Amaze-Sim
 ### Educational Android Security Simulation
 
-> **ACADEMIC PROJECT ONLY**  
+> **ACADEMIC PROJECT – EDUCATIONAL USE ONLY**  
 > IE3112 – Mobile Security  
 > Sri Lanka Institute of Information Technology (SLIIT)
 
@@ -9,38 +9,38 @@
 
 ## 📘 Project Overview
 
-This repository contains an **educational, controlled simulation** of Android
+This repository contains an **educational and controlled simulation** of Android
 application reverse engineering and **Trojan-style background service injection**
 using the open-source **Amaze File Manager** application.
 
-The purpose of this project is to **demonstrate security risks, attack vectors,
-and defensive considerations** in Android application development — strictly
+The objective of this project is to **demonstrate security risks, attack vectors,
+and mitigation strategies** related to Android application tampering — strictly
 within an academic and ethical context.
 
 ---
 
 ## 🎯 Learning Objectives
 
-Through this project, students gain practical understanding of:
+This project helps students understand:
 
 - Android APK reverse engineering (static analysis)
-- Android application architecture (Activities, Services, Receivers)
-- How malicious logic *can be injected* after tampering
-- Trigger-based background execution (simulated)
-- Security implications and mitigation strategies
-- Ethical boundaries of offensive security research
+- Android component architecture (Activities, Services, Receivers)
+- How malicious logic *can be injected* after application tampering
+- Trigger-based background execution techniques (simulated)
+- Security risks and real-world implications
+- Defensive measures to prevent such attacks
 
 ---
 
 ## ⚠️ Ethical & Academic Compliance
 
-This project strictly follows **university cybersecurity ethics policies**.
+This project strictly adheres to **university cybersecurity ethics policies**.
 
-✅ Tested only in Android Emulator  
-✅ No real user data accessed  
-✅ No network exfiltration or C2 communication  
+✅ Tested only in an Android Emulator  
+✅ No real user data accessed or stolen  
+✅ No network exfiltration or command-and-control communication  
 ✅ No modified APKs distributed publicly  
-✅ No real malware deployment  
+✅ No real-world deployment  
 
 ❌ **This project must NOT be used outside an educational environment**
 
@@ -49,24 +49,24 @@ This project strictly follows **university cybersecurity ethics policies**.
 ## 🧪 Project Scope
 
 - Reverse engineering using JADX
-- Analysis of `AndroidManifest.xml`
+- AndroidManifest.xml analysis
 - Controlled injection of a **simulated background service**
 - Menu-based and time-based trigger demonstration
 - Logcat-based execution verification
-- Security risk assessment and defenses
+- Security analysis and mitigation discussion
 
 ---
 
-## 📁 Repository Structure (Educational Reference)
+## 📁 Repository Structure 
 ├── README.md
-├── docs/                (guides & explanations)
+├── docs/                (guides and explanations)
 ├── src/
-│   └── code-snippets/
-│      └── DemoService.kt
-├── evidence/            (screenshots & logs)
+│   └── code-snippets/   (sanitized, non-buildable code references)
+├── evidence/            (screenshots and logs)
 ├── reports/             (final academic report PDF)
-└── tools/               (helper scripts if required)
-> ⚠️ Only **sanitized, non-deployable code snippets** are included.
+
+> ⚠️ Only **sanitized code snippets** are included.  
+> This repository does **not** contain a buildable Android project.
 
 ---
 
@@ -74,23 +74,23 @@ This project strictly follows **university cybersecurity ethics policies**.
 
 ### Phase 1 – Reverse Engineering
 - APK decompilation
-- Component mapping
-- Permission analysis
+- Component and permission analysis
+- Control-flow understanding
 
-### Phase 2 – Simulation of Trojan Injection
-- Background service design (simulated)
+### Phase 2 – Trojan Simulation
+- Background service design (simulation)
 - Trigger logic implementation
 - Manifest modification (demonstration)
 
 ### Phase 3 – Security Analysis
 - Risk identification
 - Attack flow explanation
-- Mitigation strategies
+- Mitigation and prevention strategies
 
 ### Phase 4 – Testing & Documentation
-- Emulator testing
+- Emulator-based testing
 - Logcat verification
-- Screenshots & reporting
+- Screenshots and reporting
 
 ---
 
@@ -113,19 +113,19 @@ Sri Lanka Institute of Information Technology (SLIIT)
 All group members contributed collaboratively to:
 - Research and analysis
 - Reverse engineering study
-- Simulation design
-- Testing and validation
+- Simulation design and testing
+- Security evaluation
 - Documentation and reporting
 
 ---
 
 ## ⚖️ Disclaimer
 
-This repository exists **solely for academic learning**.
+This repository exists **solely for academic learning purposes**.
 
-Any techniques discussed or demonstrated are intended to help
-developers and security professionals **understand, detect, and prevent**
-Android application tampering.
+All techniques demonstrated are intended to help developers and security
+professionals **understand, detect, and prevent** Android application tampering.
+No malicious intent or real-world exploitation is involved.
 
 ---
 
