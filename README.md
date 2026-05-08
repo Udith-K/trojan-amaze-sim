@@ -62,7 +62,7 @@ This project strictly follows **university cybersecurity ethics policies**.
 ├── docs/                (guides & explanations)
 ├── src/
 │   └── code-snippets/
-│       └── DemoService.kt
+│      └── DemoService.kt
 ├── evidence/            (screenshots & logs)
 ├── reports/             (final academic report PDF)
 └── tools/               (helper scripts if required)
