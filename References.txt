@@ -1,0 +1,11 @@
+REFERENCE LIST
+
+[1] JADX GitHub repository. Available: https://github.com/skylot/jadx 
+[2] Amaze File Manager Source code. Available: https://github.com/TeamAmaze/AmazeFileManager 
+[3] Android Developers. Android App Manifest Overview. https://developer.android.com/guide/topics/manifest/manifest-intro 
+[4] Android Developers. Services overview. https://developer.android.com/guide/components/services 
+[5] Android Developers. Broadcast Receivers Overview. https://developer.android.com/guide/components/broadcasts 
+[6] Android Developers. Foreground Services Overview. https://developer.android.com/guide/components/foreground-services 
+[7] Oracle. Java Documentation. https://docs.oracle.com 
+[8] Android Developers. Android Debug Bridge (ADB). https://developer.android.com/tools/adb
+[9] Android Developers. Logcat Command-Line Tool.  https://developer.android.com/tools/logcat
