@@ -54,14 +54,16 @@ This project strictly adheres to **university cybersecurity ethics policies**.
 ---
 
 ## 📁 Repository Structure 
-
-├── README.md
-├── docs/                (guides and explanations)
-├── src/
-│   └── code-snippets/   (sanitized, non-buildable code references)
-├── evidence/            (screenshots and logs)
-├── reports/             (final academic report PDF)
-
+Decompiled APK
+Final Report/
+  └── MS assignment.pdf
+Screenshots/
+  ├── Code Snippets/
+  ├── Emulator/
+  └── Logcat/
+Src/code snippet/
+README.md
+References.txt
 
 > ⚠️ Only **sanitized code snippets** are included.  
 > This repository does **not** contain a buildable Android project.
