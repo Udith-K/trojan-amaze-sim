@@ -1,10 +1,6 @@
 # Trojan-Amaze-Sim
 ### Educational Android Security Simulation
 
-> **ACADEMIC PROJECT – EDUCATIONAL USE ONLY**  
-> IE3112 – Mobile Security  
-> Sri Lanka Institute of Information Technology (SLIIT)
-
 ---
 
 ## 📘 Project Overview
