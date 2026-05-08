@@ -1,0 +1,27 @@
+<!--
+    AndroidManifest_Service_Snippet.xml
+    ------------------------------------------------------------
+    EDUCATIONAL SECURITY SIMULATION – MANIFEST SNIPPET
+
+    Course: IE3112 – Mobile Security
+    Institution: Sri Lanka Institute of Information Technology (SLIIT)
+
+    Description:
+    This snippet demonstrates how a background service can be
+    registered inside AndroidManifest.xml after application
+    tampering or reverse engineering.
+
+    It highlights how malicious or unauthorized services could
+    be silently introduced if application integrity checks are
+    not implemented.
+
+    IMPORTANT:
+    - This is NOT a complete AndroidManifest.xml file
+    - Provided only for academic reference and viva explanation
+-->
+
+<!-- Simulated Trojan-like background service registration -->
+<service
+    android:name=".asynchronous.services.DemoService"
+    android:exported="false"
+    android:foregroundServiceType="dataSync" />
